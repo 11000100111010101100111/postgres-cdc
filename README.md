@@ -65,7 +65,7 @@ final PGConfig pgConfig = PGConfig.config()
 
 ```java
 final BaseReader.Binder binder = BaseReader.Binder
-                .on("postgres", "public", "your_database");
+                .on("postgres", "public", "your_table_name");
 ```
 
 3.Create a CDC consumption instance. If you need to create multiple instances, they are isolated from each other. Each instance implements the AutoCloseable interface, so you need to call the close() method to release resources after use
